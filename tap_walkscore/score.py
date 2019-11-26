@@ -52,10 +52,10 @@ class ScoreStream(Stream):
                 "type": ["null", "string"]
             },
             "transit": {
-                "type": ["null", "json"]
+                "type": ["null", "string"]
             },
             "bike": {
-                "type": ["null", "json"]
+                "type": ["null", "string"]
             },
         },
     }
