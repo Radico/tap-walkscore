@@ -9,7 +9,7 @@ class ScoreStream(Stream):
     stream = 'score'
 
     meta_fields = dict(
-
+        key_properties=['snapped_lat'],
         api_path='/score',
         replication_method='full',
         selected_by_default=False

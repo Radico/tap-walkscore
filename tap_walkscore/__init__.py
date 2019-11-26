@@ -7,7 +7,6 @@ from .executor import WalkScoreExecutor
 
 REQUIRED_CONFIG_KEYS = [
     "wsapikey",
-    "locations",
 ]
 
 STREAMS = [
