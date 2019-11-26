@@ -37,20 +37,20 @@ class WalkScoreExecutor(TapExecutor):
         self.call_stream(stream, request_config)
 
     def call_stream(self, stream, request_config):
-        #for location in self.client.config['locations']:
-        request_config['params'] = self.build_params(
-            "1448 NW Market St","47.6690464","-122.3759294")
-        res = self.client.make_request(request_config)
+        for location in self.client.config['locations']:
+            request_config['params'] = self.build_params(
+                location[0], location[1], location[2])
+            res = self.client.make_request(request_config)
 
-        records = res.json()
+            records = res.json()
 
-        if not records:
-            records = []
-        elif not isinstance(records, list):
-            # subsequent methods are expecting a list
-            records = [records]
+            if not records:
+                records = []
+            elif not isinstance(records, list):
+                # subsequent methods are expecting a list
+                records = [records]
 
-        transform_write_and_count(stream, records)
+            transform_write_and_count(stream, records)
 
     def build_params(self, address, lat, lon):
         return {
