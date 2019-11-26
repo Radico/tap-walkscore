@@ -19,10 +19,10 @@ class ScoreStream(Stream):
     schema = {
         "properties": {
             "status": {
-                "type": ["null", "string"]
+                "type": ["null", "number"]
             },
             "walkscore": {
-                "type": ["null", "string"]
+                "type": ["null", "number"]
             },
             "description": {
                 "type": ["null", "string"]
@@ -46,10 +46,10 @@ class ScoreStream(Stream):
                 "type": ["null", "string"]
             },
             "snapped_lat": {
-                "type": ["null", "string"]
+                "type": ["null", "number"]
             },
             "snapped_lon": {
-                "type": ["null", "string"]
+                "type": ["null", "number"]
             },
             "transit": {
                 "type": ["null", "string"]
