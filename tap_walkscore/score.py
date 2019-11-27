@@ -52,26 +52,32 @@ class ScoreStream(Stream):
                 "type": ["null", "number"]
             },
             "transit": {
-                "score": {
-                    "type": ["null", "number"]
+                "properties": {
+                    "score": {
+                        "type": ["null", "number"]
+                    },
+                    "description": {
+                        "type": ["null", "string"]
+                    },
+                    "summary": {
+                        "type": ["null", "string"]
+                    },
                 },
-                "description": {
-                    "type": ["null", "string"]
-                },
-                "summary": {
-                    "type": ["null", "string"]
-                },
+                "type": ["null", "object"]
             },
             "bike": {
-                "score": {
-                    "type": ["null", "number"]
+                "properties": {
+                    "score": {
+                        "type": ["null", "number"]
+                    },
+                    "description": {
+                        "type": ["null", "string"]
+                    },
+                    "summary": {
+                        "type": ["null", "string"]
+                    },
                 },
-                "description": {
-                    "type": ["null", "string"]
-                },
-                "summary": {
-                    "type": ["null", "string"]
-                },
+                "type": ["null", "object"]
             },
         },
     }
